@@ -13,7 +13,9 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-container">
-      <div class="logo">.D</div>
+      <div class="logo">
+        <img src="assets/logo.jpg" alt="Logo Punto Dato" class="logo-img" />
+      </div>
       <nav>
         <ul class="nav-links">
           <li><a href="#nosotros">Nosotros</a></li>
@@ -27,15 +29,14 @@
     </div>
   </header>
 
-    <!-- HERO -->
-    <section class="hero">
+  <!-- HERO -->
+  <section class="hero">
     <div class="hero-content fade-in">
-        <h1>Somos tu aliado en seguridad.</h1>
-        <p>Somos un equipo comprometido con tus necesidades en seguridad y gestión de riesgos buscando tu éxito empresarial.</p>
-        <a href="#" class="btn btn-yellow btn-brochure">DESCARGAR BROCHURE</a>
+      <h1>Somos tu aliado en seguridad.</h1>
+      <p>Somos un equipo comprometido con tus necesidades en seguridad y gestión de riesgos buscando tu éxito empresarial.</p>
+      <a href="#" class="btn btn-yellow btn-brochure">DESCARGAR BROCHURE</a>
     </div>
-    </section>
-
+  </section>
 
   <!-- NOSOTROS -->
   <section id="nosotros" class="section fade-in">
@@ -56,8 +57,8 @@
   <!-- MISIÓN -->
   <section class="mision-vision-section fade-in">
     <div class="container mv-row">
-      <div class="mv-img mv-img-left">
-        <img src="images/mision.jpg" alt="Imagen misión" />
+      <div class="mv-img">
+        <img src="assets/mision.jpg" alt="Imagen misión" />
       </div>
       <div class="mv-text">
         <h3>Misión</h3>
@@ -71,8 +72,8 @@
   <!-- VISIÓN -->
   <section class="mision-vision-section fade-in">
     <div class="container mv-row reverse">
-      <div class="mv-img mv-img-right">
-        <img src="images/vision.jpg" alt="Imagen visión" />
+      <div class="mv-img">
+        <img src="assets/vision.jpg" alt="Imagen visión" />
       </div>
       <div class="mv-text">
         <h3>Visión</h3>
@@ -85,18 +86,9 @@
 
   <!-- STATS -->
   <section class="stats fade-in">
-    <div>
-      <div class="icon-stat icon-empresas"></div>
-      <strong>+120</strong><br/>Empresas protegidas
-    </div>
-    <div>
-      <div class="icon-stat icon-trayectoria"></div>
-      <strong>+40</strong><br/>Años de trayectoria
-    </div>
-    <div>
-      <div class="icon-stat icon-num"></div>
-      <strong>+NUM</strong><br/>Info nueva
-    </div>
+    <div><strong>+120</strong><br>Empresas protegidas</div>
+    <div><strong>+40</strong><br>Años de trayectoria</div>
+    <div><strong>+NUM</strong><br>Info nueva</div>
   </section>
 
   <!-- SERVICIOS -->
@@ -106,60 +98,77 @@
       <div class="service-grid">
         <div class="service-box">
           <h3>01. Gerenciamiento de riesgos corporativos</h3>
-          <div class="btn-box"><a href="#">CONOCER MÁS</a></div>
+          <div class="btn-box"><a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a></div>
         </div>
-        <div class="service-box">
+       <div class="service-box">
           <h3>02. Gestión integral en protección marítima y portuaria</h3>
-          <div class="btn-box"><a href="#">CONOCER MÁS</a></div>
+          <div class="btn-box"><a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a></div>
         </div>
         <div class="service-box">
           <h3>03. Investigación de fraudes, hurtos y robos</h3>
-          <div class="btn-box"><a href="#">CONOCER MÁS</a></div>
+          <div class="btn-box"><a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a></div>
         </div>
         <div class="service-box">
           <h3>04. Protección de mercadería y activos</h3>
-          <div class="btn-box"><a href="#">CONOCER MÁS</a></div>
+          <div class="btn-box"><a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a></div>
         </div>
+      </div>
       </div>
     </div>
   </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="section contacto fade-in">
+  <!-- MODAL: Gerenciamiento -->
+  <div class="modal" id="modal-gerenciamiento">
+    <div class="modal-content">
+      <h2>Gerenciamiento de riesgos corporativos</h2>
+      <p>
+        Toda empresa que lleva adelante un negocio está expuesta a riesgos. Cuando hablamos de riesgos nos referimos a toda aquella situación que potencialmente puede generar peligros y pérdidas tangibles o no.
+      </p>
+      <p>
+        Para llevar adelante esta función existen herramientas y métodos, que sumado a la creación de una cultura organizacional, trabajan eficazmente en la gestión de riesgos.
+      </p>
+      <p>
+        Los objetivos trazados se logran buscando proteger los activos y la salud financiera de la empresa, contribuir en la toma de decisiones del negocio y prevenir futuras situaciones que lleven a pérdidas materiales o daños en la imagen y reputación de la firma.
+      </p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section contacto fade-in">
     <div class="container contacto-flex">
-        <div class="contact-img">
-        <!-- Espacio para insertar imagen -->
-        <img src="images/contact-placeholder.jpg" alt="Imagen contacto" />
-        </div>
-        <div class="contact-form">
+      <div class="contact-img">
+        <img src="assets/contact.jpg" alt="Imagen contacto" />
+      </div>
+      <div class="contact-form">
         <h2>Te asesoramos en todo momento!</h2>
         <form>
-            <div class="form-group icon-input">
+          <div class="form-group icon-input">
             <input type="text" placeholder="Nombre" required>
             <div class="icon-form icon-user"></div>
-            </div>
-            <div class="form-group icon-input">
+          </div>
+          <div class="form-group icon-input">
             <input type="email" placeholder="Correo electrónico" required>
             <div class="icon-form icon-email"></div>
-            </div>
-            <div class="form-group icon-input">
+          </div>
+          <div class="form-group icon-input">
             <textarea placeholder="Tu consulta" required></textarea>
             <div class="icon-form icon-question"></div>
-            </div>
-            <button type="submit" class="btn btn-yellow btn-enviar">ENVIAR</button>
+          </div>
+          <button type="submit" class="btn btn-yellow btn-enviar">ENVIAR</button>
         </form>
-        </div>
+      </div>
     </div>
-    </section>
-
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <p>© 2025 – Melfi Studio Web & Design</p>
   </footer>
 
+  <!-- JS -->
   <script>
-    // Animación de fade-in al hacer scroll
+    // Scroll animaciones
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -167,8 +176,22 @@
         }
       });
     });
-
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Modal
+    document.querySelectorAll('[data-modal]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const modalId = btn.getAttribute('data-modal');
+        document.getElementById(modalId).classList.add('show');
+      });
+    });
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        btn.closest('.modal').classList.remove('show');
+      });
+    });
   </script>
 
 </body>
