@@ -153,43 +153,95 @@ body {
 }
 
 /* SERVICIOS */
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 0 4rem; 
+}
+
+.title-block {
+    border-top: 2px solid #d9a35e;
+    padding-top: 0.5rem;
+}
+
+.title-block .subtitle {
+    color: #d9a35e;
+    font-size: 0.9rem;
+}
+
+.btn.btn-primary {
+    background-color: #3d5a80;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn.btn-primary:hover {
+    background-color: #2e435e;
+}
+
+
+.services .container {
+    overflow-x: hidden;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 .services h2 {
-  margin-bottom: 2rem;
-  color: #1c2341;
+    color: #0d1b2a;
+    font-size: 2.5rem;
+    margin: 0.2rem 0 0 0;
 }
 
 .service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+    display: flex; 
+    overflow-x: auto; 
+    gap: 2rem;
+    padding: 1rem 5%;
+    scrollbar-width: none; 
 }
 
+
 .service-box {
-  background: #1c2341;
-  color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
+    background: #0d1b2a; 
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 280px;
+    height: 300px;
+}
+
+.service-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .service-box h3 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  flex-grow: 1;
+    font-size: 1.25rem;
+    flex-grow: 1;
+    font-weight: 300;
+}
+
+.btn-box {
+    margin-top: auto;
 }
 
 .btn-box a {
-  display: block;
-  background-color: #d9a35e;
-  color: white;
-  text-align: center;
-  padding: 0.6rem;
-  font-weight: bold;
-  border-radius: 4px;
-  text-decoration: none;
+    display: inline-block; 
+    background-color: #d9a35e;
+    color: white; 
+    padding: 0.8rem 1.5rem; 
+    text-decoration: none;
+}
+
+.btn-box a:hover {
+    background-color: #c8924c;
 }
 
 /* MODAL */
