@@ -62,8 +62,9 @@ body {
 
 /* HERO */
 .hero {
-  background: url('assets/hero.jpg') no-repeat center center/cover;
-  height: 80vh;
+ background: linear-gradient(rgba(28, 35, 65, 0.7), rgba(28, 35, 65, 0.7)),
+              url('assets/hero.jpg') no-repeat center center/cover;
+  height: 90vh;
   display: flex;
   align-items: center;
   color: white;
@@ -71,7 +72,19 @@ body {
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3rem; /* Tamaño grande para el título */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem; /* Más espacio antes del botón */
 }
 
 .btn {
@@ -102,6 +115,12 @@ body {
 }
 
 /* MISIÓN & VISIÓN */
+
+.subtitle-nosotros {
+    color: #d9a35e;
+    font-size: large;
+}
+
 .mv-row {
   display: flex;
   flex-wrap: wrap;
