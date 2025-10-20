@@ -115,69 +115,199 @@
 
 </section>
 
-  <!-- SERVICIOS -->
+<!-- SERVICIOS -->
 <section id="servicios" class="section services fade-in">
-    <div class="container">
-        <div class="services-header">
-            <div class="title-block">
-                <span class="subtitle">Servicios</span>
-                <h2>Qué ofrecemos</h2>
-            </div>
-            <a href="#contacto" class="btn btn-primary">CONTACTARME</a>
-        </div>
-
-        <div class="service-grid">
-            <div class="service-box">
-                <span class="service-number">01.</span>
-                <h3>Gerenciamiento <br> de riesgos corporativos</h3>
-                <div class="btn-box">
-                    <a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <span class="service-number">02.</span>
-                <h3>Gestión integral en protección marítima y portuaria</h3>
-                <div class="btn-box">
-                    <a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <span class="service-number">03.</span>
-                <h3>Investigación <br> de fraudes, hurtos y robos</h3>
-                <div class="btn-box">
-                    <a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <span class="service-number">04.</span>
-                <h3>Protección de mercadería y activos</h3>
-                <div class="btn-box">
-                    <a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="services-header">
+      <div class="title-block">
+        <span class="subtitle">Servicios</span>
+        <h2>Qué ofrecemos</h2>
+      </div>
+      <a href="#contacto" class="btn btn-primary">CONTACTARME</a>
     </div>
+
+    <!-- 🔹 Envolvemos TODO en service-slider-wrapper -->
+    <div class="service-slider-wrapper">
+      <button class="slider-btn left" id="slideLeft">&#10094;</button>
+
+      <div class="service-grid" id="serviceGrid">
+        <!-- Servicios -->
+        <div class="service-box">
+          <span class="service-number">01.</span>
+          <h3>Gerenciamiento<br>de riesgos corporativos</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-gerenciamiento">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">02.</span>
+          <h3>Gestión integral en protección marítima y portuaria</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-marítima">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">03.</span>
+          <h3>Investigación<br>de fraudes, hurtos y robos</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-fraudes">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">04.</span>
+          <h3>Protección de mercadería y activos</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-proteccion">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">05.</span>
+          <h3>Asesoría en protección de la información y ciberseguridad</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-ciberseguridad">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">06.</span>
+          <h3>Informes de seguridad para selección de personal y ejecutivos</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-informes">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">07.</span>
+          <h3>Diseño e implementación de sistemas integrales de seguridad</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-sistemas">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">08.</span>
+          <h3>Auditorías técnicas de sistemas de seguridad</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-auditorias">CONOCER MÁS</a>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <span class="service-number">09.</span>
+          <h3>Gestión integral de la pérdida en empresas de Retail</h3>
+          <div class="btn-box">
+            <a href="#" data-modal="modal-retail">CONOCER MÁS</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn right" id="slideRight">&#10095;</button>
+    </div>
+  </div>
 </section>
 
-  <!-- MODAL: Gerenciamiento -->
+
+  <!-- ================= MODALES ================= -->
+
+  <!-- 01 -->
   <div class="modal" id="modal-gerenciamiento">
     <div class="modal-content">
       <h2>Gerenciamiento de riesgos corporativos</h2>
-      <p>
-        Toda empresa que lleva adelante un negocio está expuesta a riesgos. Cuando hablamos de riesgos nos referimos a toda aquella situación que potencialmente puede generar peligros y pérdidas tangibles o no.
-      </p>
-      <p>
-        Para llevar adelante esta función existen herramientas y métodos, que sumado a la creación de una cultura organizacional, trabajan eficazmente en la gestión de riesgos.
-      </p>
-      <p>
-        Los objetivos trazados se logran buscando proteger los activos y la salud financiera de la empresa, contribuir en la toma de decisiones del negocio y prevenir futuras situaciones que lleven a pérdidas materiales o daños en la imagen y reputación de la firma.
-      </p>
+      <p>Toda empresa que lleva adelante un negocio está expuesta a riesgos. Cuando hablamos de riesgos nos referimos a toda aquella situación que potencialmente puede generar peligros y pérdidas tangibles o no.</p>
+      <p>Para llevar adelante esta función existen herramientas y métodos que, sumado a la creación de una cultura organizacional, trabajan eficazmente en la gestión de riesgos.</p>
+      <p>Los objetivos trazados se logran buscando proteger los activos y la salud financiera de la empresa, contribuir en la toma de decisiones del negocio y prevenir futuras situaciones que lleven a pérdidas materiales o daños en la imagen y reputación de la firma.</p>
+      <p><strong>Especialistas en:</strong> empresas de energía, operaciones logísticas, retail y plantas fabriles.</p>
       <a href="#" class="modal-close">← VOLVER</a>
     </div>
   </div>
+
+  <!-- 02 -->
+  <div class="modal" id="modal-marítima">
+    <div class="modal-content">
+      <h2>Gestión integral en protección marítima y portuaria</h2>
+      <p>Desarrollamos nuestra labor cumpliendo lo normado en el “Código de Protección de Buques e Instalaciones Portuarias” (CPBIP – ISPS Code) de la OMI e ISO 28000.</p>
+      <p>Somos una organización reconocida y habilitada por Prefectura Naval.</p>
+      <p><strong>Servicios:</strong> Evaluaciones y Planes de Protección de Instalaciones Portuarias (EPIP y PPIP), gestiones ante PNA para análisis y aprobación.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- 03 -->
+  <div class="modal" id="modal-fraudes">
+    <div class="modal-content">
+      <h2>Investigación de fraudes, hurtos y robos</h2>
+      <p>Según estadísticas internacionales, el 5% de los ingresos anuales se pierden por fraude. La mejor forma de evitarlo es con capacitación y control.</p>
+      <p>Investigamos hechos ilícitos dentro de las organizaciones, identificando actores, metodologías y pérdidas.</p>
+      <p>El resultado permite recuperar activos, accionar legalmente y reformar los procedimientos internos.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- 04 -->
+  <div class="modal" id="modal-proteccion">
+    <div class="modal-content">
+      <h2>Protección de mercadería y activos</h2>
+      <p>Tu marca y tus activos son los bienes más valiosos. Los protegemos frente al uso indebido por terceros, falsificación o fraude.</p>
+      <p>Diseñamos estrategias para prevenir imitaciones y uso ilegal de propiedad intelectual e imagen.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- 05 -->
+  <div class="modal" id="modal-ciberseguridad">
+    <div class="modal-content">
+      <h2>Asesoría en protección de la información y ciberseguridad</h2>
+      <p>Tu información digital es un activo invaluable. La protegemos contra vulnerabilidades, ataques y pérdida de datos.</p>
+      <p>Diseñamos planes de acción, protección de redes, sistemas y bases de datos.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- 06 -->
+  <div class="modal" id="modal-informes">
+    <div class="modal-content">
+      <h2>Informes de seguridad para selección de personal y ejecutivos</h2>
+      <p>La selección confiable de personal es clave para el éxito de la empresa.</p>
+      <p><strong>Servicios:</strong> antecedentes penales, informes laborales, socio-ambientales, comerciales y especiales.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- 07 -->
+  <div class="modal" id="modal-sistemas">
+    <div class="modal-content">
+      <h2>Diseño e implementación de sistemas integrales de seguridad</h2>
+      <p>Diseñamos sistemas de seguridad integrales y multidisciplinarios, incorporando tecnología, seguridad física y analítica de datos.</p>
+      <p>Garantizamos soluciones viables y sostenibles en costo y mantenimiento.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- 08 -->
+  <div class="modal" id="modal-auditorias">
+    <div class="modal-content">
+      <h2>Auditorías técnicas de sistemas de seguridad</h2>
+      <p>Evaluamos profesionalmente tus sistemas de seguridad para verificar cumplimiento normativo, detectar riesgos y proponer mejoras.</p>
+      <p>Generamos informes detallados y recomendaciones de optimización.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
+  <!-- 09 -->
+  <div class="modal" id="modal-retail">
+    <div class="modal-content">
+      <h2>Gestión integral de la pérdida en empresas de Retail</h2>
+      <p>Abordamos la gestión de pérdida conocida y desconocida en retail, mediante análisis, prevención y estrategias de reducción de pérdidas.</p>
+      <p><strong>Ejemplo:</strong> más del 47% de las empresas experimentaron fraude o robo interno en los últimos 2 años.</p>
+      <p>Brindamos soluciones a medida para disminuir el impacto económico y operativo.</p>
+      <a href="#" class="modal-close">← VOLVER</a>
+    </div>
+  </div>
+
 
   <!-- CONTACTO -->
   <section id="contacto" class="section contacto fade-in">
@@ -239,6 +369,21 @@
       });
     });
   </script>
+
+  <script>
+  const grid = document.getElementById("serviceGrid");
+  const slideLeft = document.getElementById("slideLeft");
+  const slideRight = document.getElementById("slideRight");
+
+  slideLeft.addEventListener("click", () => {
+    grid.scrollBy({ left: -300, behavior: "smooth" });
+  });
+
+  slideRight.addEventListener("click", () => {
+    grid.scrollBy({ left: 300, behavior: "smooth" });
+  });
+</script>
+
 
 </body>
 </html>
