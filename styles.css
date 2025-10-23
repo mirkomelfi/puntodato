@@ -468,6 +468,12 @@ body {
   background-position: center;
 }
 
+/* Para que no aparezca el borde azul al hacer clic */
+.icon-input input:focus,
+.icon-input textarea:focus {
+    outline: none;
+}
+
 .btn-enviar {
   align-self: center;
   padding: 0.8rem 2rem;
