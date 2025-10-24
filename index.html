@@ -43,7 +43,7 @@
   <!-- NOSOTROS -->
   <section id="nosotros" class="section fade-in">
     <div class="container">
-      <p class="subtitle-nosotros">Contacto</p>
+      <p class="subtitle-nosotros">Nosotros</p>
       <h2>Conocé a Punto Dato</h2>
       <p>
         Somos un grupo de profesionales en diversas actividades, con más de 40 años de experiencia en organismos gubernamentales, empresas nacionales y multinacionales. Tenemos una sólida trayectoria en gestión de riesgos y seguridad.
@@ -345,7 +345,7 @@
 
           <!-- Mensaje -->
           <div class="form-group icon-input">
-            <textarea name="mensaje" placeholder="Tu consulta" required></textarea>
+            <textarea id="consulta" name="mensaje" placeholder="Tu consulta" required></textarea>
             <div class="icon-form icon-question"></div>
           </div>
 
@@ -401,6 +401,33 @@
 
   slideRight.addEventListener("click", () => {
     grid.scrollBy({ left: 300, behavior: "smooth" });
+  });
+</script>
+
+<script>
+  // Espera a que todo el HTML esté cargado
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    // 1. Selecciona el textarea por su ID
+    const textarea = document.getElementById('consulta');
+
+    // 2. Crea la función que ajusta la altura
+    function autoResize() {
+      // Resetea la altura a 'auto' para que pueda encogerse si borras texto
+      this.style.height = 'auto';
+      
+      // Asigna la altura real del contenido (scrollHeight)
+      // scrollHeight es la altura total del contenido, visible o no
+      this.style.height = this.scrollHeight + 'px';
+    }
+
+    // 3. Añade el "escuchador" de eventos
+    // 'input' se activa cada vez que escribes, pegas, o cortas texto
+    textarea.addEventListener('input', autoResize, false);
+
+    // Opcional: Si el campo se carga con texto (ej. al editar un formulario),
+    // descomenta la siguiente línea para que se ajuste al cargar la página.
+    // autoResize.call(textarea);
   });
 </script>
 

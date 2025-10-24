@@ -222,7 +222,7 @@ body {
 
 .title-block .subtitle {
   color: var(--amarillo);
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .btn.btn-primary {
@@ -266,16 +266,15 @@ body {
 .service-box {
   background: var(--azul);
   color: white;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 2rem 4.5rem 2rem; 
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   width: 280px;
   height: 300px;
-  border-radius: 8px;
   transition: transform 0.3s ease;
-  position: relative;
-  overflow: visible;
+  overflow: hidden;
+  position: relative; 
 }
 
 .service-box:hover {
@@ -289,49 +288,14 @@ body {
   margin-bottom: 1rem;
 }
 
-
-
-/* ✅ Botón afuera visualmente, pero parte del bloque */
-.btn-box {
-  margin-top: auto;
-  transform: translateY(50%);
-}
-
-.btn-box a {
-  display: inline-block;
-  background-color: #d9a35e;
-  color: white;
-  padding: 0.6rem 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  transition: background-color 0.3s ease;
-}
-
 .btn-box a:hover {
   background-color: #c8924c;
 }
 
-.service-box {
-  background: var(--azul);
-  color: white;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  width: 280px;
-  height: 300px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  position: relative;
-  overflow: hidden; /* importante */
-}
-
 .btn-box {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .btn-box a {
@@ -341,13 +305,8 @@ body {
   padding: 0.6rem 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 4px;
   font-size: 0.85rem;
   transition: background-color 0.3s ease;
-}
-
-.btn-box a:hover {
-  background-color: #c8924c;
 }
 
 
@@ -420,8 +379,8 @@ body {
 }
 
 .subtitle-contact {
-  color: #d9a35e;
-  font-size: large;
+  color: var(--amarillo);
+  font-size: 1.2rem;
 }
 
 .contact-form {
@@ -652,7 +611,11 @@ body {
   padding: 0.6rem 1.2rem;
 }
 .section {
-  padding: 2rem 0;
+  padding: 1rem 0 1.5rem;
+}
+
+.contacto{
+  padding-top: 0;
 }
 
 .contact-img{
