@@ -319,21 +319,40 @@
       <div class="contact-form">
         <p class="subtitle-contact">Contacto</p>
         <h2>Te asesoramos en todo momento!</h2>
-        <form>
+        <form action="https://formsubmit.co/agusmelfi4@gmail.com" method="POST">
+          <!-- Configuración de FormSubmit -->
+          <input type="hidden" name="_next" value="https://puntodato.com/gracias.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web Punto Dato">
+
+          <!-- Nombre -->
           <div class="form-group icon-input">
-            <input type="text" placeholder="Nombre" required>
+            <input type="text" name="nombre" placeholder="Nombre" required>
             <div class="icon-form icon-user"></div>
           </div>
+
+          <!-- Email -->
           <div class="form-group icon-input">
-            <input type="email" placeholder="Correo electrónico" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
             <div class="icon-form icon-email"></div>
           </div>
+
+          <!-- Teléfono -->
           <div class="form-group icon-input">
-            <textarea placeholder="Tu consulta" required></textarea>
+            <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+            <div class="icon-form icon-phone"></div>
+          </div>
+
+          <!-- Mensaje -->
+          <div class="form-group icon-input">
+            <textarea name="mensaje" placeholder="Tu consulta" required></textarea>
             <div class="icon-form icon-question"></div>
           </div>
+
+          <!-- Botón enviar -->
           <button type="submit" class="btn btn-yellow btn-enviar">ENVIAR</button>
         </form>
+
       </div>
     </div>
   </section>
