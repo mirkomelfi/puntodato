@@ -240,8 +240,6 @@ body {
 
 .services .container {
   overflow-x: hidden;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .services h2 {
@@ -358,7 +356,8 @@ body {
 
 /* CONTACTO */
 .contacto {
-  padding: 2rem 0;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 
 .contacto-flex {
