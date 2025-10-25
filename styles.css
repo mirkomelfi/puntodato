@@ -150,7 +150,6 @@ body {
 
 .mv-img img {
   width: 100%;
-  border-radius: 8px;
 }
 
 .mv-text {
@@ -204,6 +203,7 @@ body {
 
 .stat-text span {
   font-size: 0.9rem; 
+  line-height: 1.2;
 }
 
 /* SERVICIOS */
@@ -275,14 +275,18 @@ body {
   position: relative; 
 }
 
+.service-box h3{
+  line-height: 1.2;
+}
+
 .service-box:hover {
   transform: translateY(-4px);
 }
 
 .service-number {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -391,6 +395,7 @@ body {
  margin-bottom: 2.5rem;
  color: var(--azul);
  font-size: 2.5rem;
+ line-height: 1.2;
 }
 
 .contact-form form {
@@ -436,6 +441,7 @@ body {
   align-self: center;
   padding: 0.8rem 2rem;
   border: none;
+  border-radius: 0;
 }
 .icon-user {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23888"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>');
