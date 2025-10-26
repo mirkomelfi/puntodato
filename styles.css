@@ -61,7 +61,6 @@ body {
   background: white;
   color: var(--azul);
   padding: 0.6rem 1rem;
-  border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -96,7 +95,6 @@ body {
 .btn {
   display: inline-block;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s ease;
 }
@@ -230,7 +228,6 @@ body {
   color: white;
   padding: 0.8rem 1.6rem;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
 }
 
