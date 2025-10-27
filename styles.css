@@ -613,7 +613,11 @@ background-color: #211f36;
   }
   .service-box h3 {
     font-size: 1rem;
-    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .service-number{
+    margin-bottom: 0;
   }
 
     .slider-btn {
