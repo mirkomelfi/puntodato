@@ -345,6 +345,10 @@ body {
   text-decoration: none;
 }
 
+#modal-formacion .modal-content p {
+    margin-bottom: 1.5em; /* O 20px, o el espacio que prefieras */
+}
+
 .modal.show {
   visibility: visible;
   opacity: 1;
